@@ -10,23 +10,22 @@
       }
 
       blockquote {
-  margin: 0;
-}
+        margin: 0;
+      }
 
-blockquote p {
-  padding: 15px;
-  background: #eee;
-  border-radius: 5px;
-}
+      blockquote p {
+        padding: 15px;
+        background: #eee;
+        border-radius: 5px;
+      }
 
-blockquote p::before {
-  content: '\201C';
-}
+      blockquote p::before {
+        content: "\201C";
+      }
 
-blockquote p::after {
-  content: '\201D';
-}
-
+      blockquote p::after {
+        content: "\201D";
+      }
     </style>
   </head>
   <body>
@@ -64,20 +63,20 @@ blockquote p::after {
     </p>
     <h2>Texto deletado</h2>
     <p>
-      Podemos marca <del>um texto como excluido</del> para indicar que ele deve ser lido,
-      mas nao considerado. (tag DEL - semântica)
+      Podemos marca <del>um texto como excluido</del> para indicar que ele deve
+      ser lido, mas nao considerado. (tag DEL - semântica)
     </p>
     <h2>Texto inserido</h2>
     <p>
-      Podemos marcar <ins>um texto como inserido</ins> para dar uma enfâse e indicar que
-      ele foi adicionado depois (tag INS - semântica).
+      Podemos marcar <ins>um texto como inserido</ins> para dar uma enfâse e
+      indicar que ele foi adicionado depois (tag INS - semântica).
     </p>
-    <p>Existe tambem o <u>sublinhado</u> com a tag U (não semântica). </p>
+    <p>Existe tambem o <u>sublinhado</u> com a tag U (não semântica).</p>
     <h2>Texto sobrescrito</h2>
     <p>Para inserir coisa do tipo x<sup>20</sup>+3</p>
     <h2>Texto subscrito</h2>
     <p>Para inserir coisa do tipo H<sub>2</sub>O</p>
-    <h2>Texto em codigos em C++</h2>
+    <h2>Texto em códigos em C++</h2>
     <pre>
       <code>#include <iostream>
       
@@ -89,13 +88,26 @@ blockquote p::after {
         return 0;
       }</code>
     </pre>
-    <p>Foi feito uso da tag PRE (para manter o texto da forma que foi adicionando, incluindo a quebra de linha) e da tag CODE para deixar o texto diferenciado.</p>
+    <p>
+      Foi feito uso da tag PRE (para manter o texto da forma que foi
+      adicionando, incluindo a quebra de linha) e da tag CODE para deixar o
+      texto diferenciado.
+    </p>
     <h2>Texto em citações</h2>
     <p>Essa <q>palavra vai ser citada</q> porque foi outra pessoa que disse.</p>
-    <blockquote cite="http://www.google.com"><p>Todo esse texto faz parte de uma citação e contem um link do google</p></blockquote>
-    <h2>Abreviaçoes</h2>
-    <p>Eu gosto de usar a palavra <abbr title="Adicionar">add</abbr>, a forma abreviada de adicionar.</p>
+    <blockquote cite="http://www.google.com">
+      <p>Todo esse texto faz parte de uma citação e contem um link do google</p>
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>
+      Eu gosto de usar a palavra <abbr title="Adicionar">add</abbr>, a forma
+      abreviada de adicionar.
+    </p>
     <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">esse texto sera invertido da direita para a esquerda (right to left) </bdo></p>
+    <p>
+      <bdo dir="rtl"
+        >esse texto sera invertido da direita para a esquerda (right to left)
+      </bdo>
+    </p>
   </body>
 </html>
