@@ -13,5 +13,23 @@
         <source media="(max-width: 1050px)" srcset="imgs/700.png" type="image/png">
         <img src="imgs/1000.png" alt="Imagem flexível">
     </picture>
+    <h1>Formas de adicionar áudios</h1>
+    <!-- Atributo "autoplay" = faz reproduzir o audio automaticamente -->
+    <!-- Atributo "loop" = faz o audio ficar repetindo -->
+    <!-- Atributo "controls" = mostra o controle do audio -->
+    <p>
+        <audio src="midia/1.mp3" controls></audio>
+    </p>
+    <!-- Atributo "preload" = 'auto' reproduz auto automaticamente; 'metadata' carrega infos básicas; 'none' faz nada =  -->
+    <p>
+        <audio preload="metadata" controls>
+            <source src="midia/2.mp3" type="audio/mpeg">
+        </audio>
+    </p>
+    <p>
+        <audio preload="none" controls>
+            <source src="midia/2.mp3" type="audio/mpeg">
+        </audio>
+    </p>
   </body>
 </html>
