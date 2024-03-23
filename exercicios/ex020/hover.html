@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da pseudo hover</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div:hover{
+            color: blueviolet;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: black;
+            color: white;
+            font-weight: 800;
+            width: 200px;
+        }
+
+        .horizontal:hover{
+            color: red;
+        }
+        .vertical:hover{
+            color: red;
+        }
+
+        .display-vertc{
+            display: none;
+        }
+
+        .display-horiz{
+            display: none;
+        }
+
+        div:hover > div.display-horiz{
+            display: inline-block;
+        }
+
+        div:hover > div.display-vertc{
+            display: block;
+        }
+
+        .div-h{
+            display: inline-block;
+            text-align: center;
+            border: 1px solid black;
+            background-color: blueviolet;
+            color: white;
+            height: 200px;
+            width: 200px;
+        }
+
+        .div-v{
+            border: 1px solid black;
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            height: 200px;
+            width: 200px;
+            margin-bottom: 5px;
+        }
+
+        .div-v:hover{
+            background-color: blue;
+            color: rgb(255, 0, 0);
+        }
+
+        .div-h:hover{
+            background-color: blue;
+            color: rgb(255, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Magicaaaaa!</p>
+    </div>
+    <p>Fim do exemplo</p>
+    <div class="horizontal">
+        <div>com o mouse aqui você vê os quadrados alinhado na horizontal</div>
+        <div class="display-horiz">
+            <div class="div-h">1</div>
+            <div class="div-h">1</div>
+            <div class="div-h">1</div>
+        </div>
+    </div>
+
+
+    <div class="vertical">
+        com o mouse aqui você vê os quadrados alinhado na vertical
+        <div class="display-vertc">
+            <div class="div-v">1</div>
+            <div class="div-v">1</div>
+            <div class="div-v">1</div>
+        </div>
+    </div>
+</body>
+</html>
