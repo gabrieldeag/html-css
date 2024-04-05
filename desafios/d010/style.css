@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #03d48b;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format(opentype);
+}
+
+header {
+    text-align: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(180deg , #27e17b, #25573b);
+    color: white;
+}
+
+header h1 {
+    padding-bottom: 10px;
+    padding: 25px 0 15px 0;
+}
+
+header > p {
+    display: inline-block;
+    padding: 20px 0;
+    max-width: 400px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+main {
+    background-color: #03d48b;;
+    /* padding: 0 20px; */
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#body {
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+main a {
+    text-decoration: none;
+    color: #23603e;
+    font-weight: bold;
+}
+
+.link-emoji::after {
+    content: '\00A0\1F517';
+}
+
+main a:hover {
+    color: #327851;
+}
+
+main h1 {
+    font-family: 'idroid', sans-serif;
+    font-size: 23px;
+    color: #25573b;
+    padding: 10px 0px;
+    margin: 0;
+    text-align: left;
+}
+
+
+main p {
+    text-align: justify;
+    margin: 10px 0;
+    text-indent: 15px;
+}
+
+main h2 {
+    font-family: 'idroid', sans-serif;
+    font-size: 20px;
+    color: #25573b;
+    margin: 20px 0;
+    text-align: left;
+    background-image: linear-gradient(270deg, rgba(206, 255, 226, 0.072), rgb(206, 255, 226));
+}
+
+main img {
+    width: 100%;
+}
+
+main h1, h2, p {
+    padding: 0 20px;
+}
+
+.ori {
+    display: block;
+    width: 300px;
+    margin: auto;
+}
+
+.video {
+    background-color: #25573b;
+    height: 400px;
+}
+
+.video iframe {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#container1 {
+    background-color: #bcf6d5;
+    margin: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: #0000003a 5px 5px 10px;}
+
+#extra {
+    display: block;
+    background-color: #1a9953;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+    text-indent: 0;
+}
+
+#list {
+    display: flex;
+    padding: 0 30px;
+    gap: 20%;
+}
+
+li {
+    list-style-type: symbols('&#10046;');
+    padding: 5px 0;
+}
+
+#conteudo6 {
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: #25573b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 15px 0 0 0;
+}
