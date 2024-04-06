@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     font-family: sans-serif;
-    background-image: linear-gradient(180deg , #27e17b, #25573b);
+    background-image: linear-gradient(180deg , #2ac570, #234130);
     color: white;
 }
 
@@ -39,11 +39,17 @@ nav {
 }
 
 nav a {
+    display: block;
     color: white;
     text-decoration: none;
-    padding-left: 10px;
+    padding-left: 5px;
+    margin: 0;
     font-size: 13px;
     font-weight: 600;
+}
+
+nav a:hover {
+    background-color: #1a9953;
 }
 
 main {
@@ -164,4 +170,10 @@ footer {
     text-align: center;
     padding: 5px;
     margin: 15px 0 0 0;
+}
+
+footer a {
+    color: #1a9953;
+    text-decoration: none;
+    font-weight: bold;
 }
